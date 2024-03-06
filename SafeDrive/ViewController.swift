@@ -30,14 +30,14 @@ class ViewController: UIViewController {
     
     func setupVideoPlayer() {
         let videos = ["cityDrive", "roadPortrait", "cityPort", "trafficLightPort", "crossStreetPort", "standRoad"]
-        guard let filePath = Bundle.main.path(forResource: videos[5], ofType: "mp4") else {
+        guard let filePath = Bundle.main.path(forResource: videos[1], ofType: "mp4") else {
             print("Video file not found")
             return
         }
         let fileURL = URL(fileURLWithPath: filePath)
         let asset = AVAsset(url: fileURL)
         let playerItem = AVPlayerItem(asset: asset)
-        
+                
         videoOutput = AVPlayerItemVideoOutput(pixelBufferAttributes: [String(kCVPixelBufferPixelFormatTypeKey): Int(kCVPixelFormatType_32BGRA)])
         playerItem.add(videoOutput)
         
@@ -126,8 +126,8 @@ class ViewController: UIViewController {
     }
     
     func detectObjects(in pixelBuffer: CVPixelBuffer) {
-//        let handler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, orientation: .right, options: [:])
-        let handler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, orientation: .up, options: [:])
+
+        let handler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, orientation: .up , options: [:])
         
         do {
             try handler.perform(requests)
@@ -150,7 +150,10 @@ class ViewController: UIViewController {
                 
                 // Transformations
                 let objectBounds = VNImageRectForNormalizedRect(objectObservation.boundingBox, Int(self.screenRect.size.width), Int(self.screenRect.size.height))
-                let transformedBounds = CGRect(x: objectBounds.minX, y: self.screenRect.size.height - objectBounds.maxY, width: objectBounds.maxX - objectBounds.minX, height: objectBounds.maxY - objectBounds.minY)
+                let transformedBounds = CGRect(x: objectBounds.minX,
+                                               y: self.screenRect.size.height - objectBounds.maxY,
+                                               width: objectBounds.maxX - objectBounds.minX,
+                                               height: objectBounds.maxY - objectBounds.minY)
             
                 self.highlightObject(objectObservation: objectObservation, bounds: transformedBounds)
             }
@@ -177,20 +180,18 @@ class ViewController: UIViewController {
             labelLayer.fontSize = 14
             labelLayer.foregroundColor = UIColor.white.cgColor
             labelLayer.backgroundColor = UIColor.black.withAlphaComponent(0.8).cgColor
-            labelLayer.alignmentMode = .center
+            labelLayer.alignmentMode = .right // Align to the right for landscape orientation
             labelLayer.cornerRadius = 2
             
-            // Position the label at the top left corner of the bounding box
-            labelLayer.frame = CGRect(x: bounds.minX,
+            // Position the label at the top right corner of the bounding box
+            labelLayer.frame = CGRect(x: bounds.maxX - CGFloat(labelString.count * 0), // Adjust the multiplier as needed
                                       y: bounds.minY - 20, // Adjust this value as needed
-                                      width: bounds.width + CGFloat(labelString.count * 3),
+                                      width: CGFloat(labelString.count * 7), // Adjust the multiplier as needed
                                       height: 20)
             detectionLayer.addSublayer(labelLayer)
             print("Label layer added")
         }
     }
-
-
 
     
     func setupLayers() {
