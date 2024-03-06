@@ -15,6 +15,13 @@
 		D66EE7392B971BC7003E38A3 /* yolov5s.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D66EE7382B971BC7003E38A3 /* yolov5s.mlmodel */; };
 		D66EE73B2B979286003E38A3 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66EE73A2B979286003E38A3 /* Alerts.swift */; };
 		D66EE7402B979C85003E38A3 /* Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66EE73F2B979C85003E38A3 /* Detector.swift */; };
+		D694ECD92B98E51E00211F2B /* cityDrive.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D66EE73D2B9794AC003E38A3 /* cityDrive.mp4 */; };
+		D694ECDB2B98E5D000211F2B /* yolov5s.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = D694ECDA2B98E5D000211F2B /* yolov5s.mlmodelc */; };
+		D694ECDD2B98E79100211F2B /* roadPortrait.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D694ECDC2B98E79100211F2B /* roadPortrait.mp4 */; };
+		D694ECDF2B98EABE00211F2B /* cityPort.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D694ECDE2B98EABE00211F2B /* cityPort.mp4 */; };
+		D694ECE22B99018100211F2B /* crossStreetPort.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D694ECE12B99018100211F2B /* crossStreetPort.mp4 */; };
+		D694ECE42B99019F00211F2B /* trafficLightPort.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D694ECE32B99019F00211F2B /* trafficLightPort.mp4 */; };
+		D694ECE62B9902AE00211F2B /* standRoad.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D694ECE52B9902AE00211F2B /* standRoad.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,12 @@
 		D66EE73A2B979286003E38A3 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		D66EE73D2B9794AC003E38A3 /* cityDrive.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cityDrive.mp4; sourceTree = "<group>"; };
 		D66EE73F2B979C85003E38A3 /* Detector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detector.swift; sourceTree = "<group>"; };
+		D694ECDA2B98E5D000211F2B /* yolov5s.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = yolov5s.mlmodelc; sourceTree = "<group>"; };
+		D694ECDC2B98E79100211F2B /* roadPortrait.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = roadPortrait.mp4; sourceTree = "<group>"; };
+		D694ECDE2B98EABE00211F2B /* cityPort.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cityPort.mp4; sourceTree = "<group>"; };
+		D694ECE12B99018100211F2B /* crossStreetPort.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = crossStreetPort.mp4; sourceTree = "<group>"; };
+		D694ECE32B99019F00211F2B /* trafficLightPort.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = trafficLightPort.mp4; sourceTree = "<group>"; };
+		D694ECE52B9902AE00211F2B /* standRoad.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = standRoad.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +73,9 @@
 		D66EE7262B969D50003E38A3 /* SafeDrive */ = {
 			isa = PBXGroup;
 			children = (
-				D66EE73D2B9794AC003E38A3 /* cityDrive.mp4 */,
+				D694ECE02B98EF3F00211F2B /* sampleVideos */,
+				D694ECDA2B98E5D000211F2B /* yolov5s.mlmodelc */,
 				D66EE7382B971BC7003E38A3 /* yolov5s.mlmodel */,
-				D66EE7352B969DC2003E38A3 /* objectDetection */,
 				D66EE7272B969D50003E38A3 /* SafeDriveApp.swift */,
 				D66EE7292B969D50003E38A3 /* ContentView.swift */,
 				D66EE72B2B969D52003E38A3 /* Assets.xcassets */,
@@ -82,11 +95,17 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		D66EE7352B969DC2003E38A3 /* objectDetection */ = {
+		D694ECE02B98EF3F00211F2B /* sampleVideos */ = {
 			isa = PBXGroup;
 			children = (
+				D694ECE52B9902AE00211F2B /* standRoad.mp4 */,
+				D694ECE32B99019F00211F2B /* trafficLightPort.mp4 */,
+				D694ECE12B99018100211F2B /* crossStreetPort.mp4 */,
+				D694ECDE2B98EABE00211F2B /* cityPort.mp4 */,
+				D66EE73D2B9794AC003E38A3 /* cityDrive.mp4 */,
+				D694ECDC2B98E79100211F2B /* roadPortrait.mp4 */,
 			);
-			path = objectDetection;
+			path = sampleVideos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +166,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D694ECDD2B98E79100211F2B /* roadPortrait.mp4 in Resources */,
+				D694ECE22B99018100211F2B /* crossStreetPort.mp4 in Resources */,
+				D694ECDB2B98E5D000211F2B /* yolov5s.mlmodelc in Resources */,
+				D694ECE62B9902AE00211F2B /* standRoad.mp4 in Resources */,
+				D694ECD92B98E51E00211F2B /* cityDrive.mp4 in Resources */,
 				D66EE72F2B969D52003E38A3 /* Preview Assets.xcassets in Resources */,
 				D66EE72C2B969D52003E38A3 /* Assets.xcassets in Resources */,
+				D694ECDF2B98EABE00211F2B /* cityPort.mp4 in Resources */,
+				D694ECE42B99019F00211F2B /* trafficLightPort.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
