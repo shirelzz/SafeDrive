@@ -12,6 +12,11 @@ import UIKit
 extension ViewController {
     
     func setupVideoPlayer() {
+        
+//        self.videoView = VideoContainerView()
+//        self.videoView.frame = self.view.bounds
+//        self.videoView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
         let videos = ["cityDrive", "roadPortrait", "cityPort", "trafficLightPort", "crossStreetPort", "standRoad"]
         guard let filePath = Bundle.main.path(forResource: videos[1], ofType: "mp4") else {
             print("Video file not found")
@@ -26,15 +31,21 @@ extension ViewController {
         
         player = AVPlayer(playerItem: playerItem)
         playerLayer = AVPlayerLayer(player: player)
-        
         player.isMuted = true
         
         playerLayer.frame = view.bounds
         playerLayer.videoGravity = .resizeAspect
         view.layer.addSublayer(playerLayer)
         
+//        self.playerLayer.frame = self.videoView.bounds
+//        self.playerLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
+//        self.videoView.layer.addSublayer(playerLayer)
+//        self.videoView.layer.masksToBounds = true
+//        self.view.addSubview(self.videoView)
+        
+        
         player.play()
-        player.rate = 0.5
+        player.rate = 0.4
         
         // Process frames
         processVideoFrames()
@@ -46,6 +57,11 @@ extension ViewController {
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(handleOrientationChange), name: UIDevice.orientationDidChangeNotification, object: nil)
 
+    }
+    
+    func retrievePixelBufferAtCurrentTime() -> CVPixelBuffer? {
+        let currentTime = player.currentTime()
+        return videoOutput.copyPixelBuffer(forItemTime: currentTime, itemTimeForDisplay: nil)
     }
     
     // Handle orientation changes
@@ -76,5 +92,14 @@ extension ViewController {
             break
         }
     }
+    
+//    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+//       super.viewWillTransition(to: size, with: coordinator)
+//        coordinator.animate(alongsideTransition: { (context) in
+//        }) { (context) in
+//            self.videoView.frame.size = size
+//            self.playerLayer.frame.size = size
+//        }
+//    }
     
 }

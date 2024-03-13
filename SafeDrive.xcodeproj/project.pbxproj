@@ -25,7 +25,13 @@
 		D694ECEA2B99D8DA00211F2B /* DepthEstimationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D694ECE92B99D8DA00211F2B /* DepthEstimationModel.swift */; };
 		D694ECEE2B99EA1600211F2B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = D694ECED2B99EA1600211F2B /* Video.swift */; };
 		D694ECF02B99EA5200211F2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D694ECEF2B99EA5200211F2B /* ViewController.swift */; };
-		D694ECF22B99ED2900211F2B /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D694ECF12B99ED2900211F2B /* Alerts.swift */; };
+		D694ECF22B99ED2900211F2B /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D694ECF12B99ED2900211F2B /* AlertsView.swift */; };
+		D694ECF52BA0C91800211F2B /* ReasoningModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D694ECF42BA0C91800211F2B /* ReasoningModel.swift */; };
+		D694ECF72BA0CAE500211F2B /* ObjectTrackingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D694ECF62BA0CAE400211F2B /* ObjectTrackingModel.swift */; };
+		D694ECF92BA0CE5B00211F2B /* ObjectTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D694ECF82BA0CE5B00211F2B /* ObjectTracker.swift */; };
+		D694ECFC2BA1012D00211F2B /* ObjectDetectorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D694ECFB2BA1012D00211F2B /* ObjectDetectorModel.swift */; };
+		D694ECFE2BA1D7C800211F2B /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D694ECFD2BA1D7C800211F2B /* CommonTypes.swift */; };
+		D694ED002BA1DA0500211F2B /* VideoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D694ECFF2BA1DA0500211F2B /* VideoContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +54,13 @@
 		D694ECE92B99D8DA00211F2B /* DepthEstimationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthEstimationModel.swift; sourceTree = "<group>"; };
 		D694ECED2B99EA1600211F2B /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		D694ECEF2B99EA5200211F2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D694ECF12B99ED2900211F2B /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		D694ECF12B99ED2900211F2B /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
+		D694ECF42BA0C91800211F2B /* ReasoningModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasoningModel.swift; sourceTree = "<group>"; };
+		D694ECF62BA0CAE400211F2B /* ObjectTrackingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectTrackingModel.swift; sourceTree = "<group>"; };
+		D694ECF82BA0CE5B00211F2B /* ObjectTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectTracker.swift; sourceTree = "<group>"; };
+		D694ECFB2BA1012D00211F2B /* ObjectDetectorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectorModel.swift; sourceTree = "<group>"; };
+		D694ECFD2BA1D7C800211F2B /* CommonTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTypes.swift; sourceTree = "<group>"; };
+		D694ECFF2BA1DA0500211F2B /* VideoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,17 +93,21 @@
 		D66EE7262B969D50003E38A3 /* SafeDrive */ = {
 			isa = PBXGroup;
 			children = (
+				D694ECFD2BA1D7C800211F2B /* CommonTypes.swift */,
+				D694ECFA2BA0FFB500211F2B /* depth */,
 				D66EE7272B969D50003E38A3 /* SafeDriveApp.swift */,
-				D694ECEB2B99E9F300211F2B /* viewController */,
 				D66EE7292B969D50003E38A3 /* ContentView.swift */,
-				D694ECE92B99D8DA00211F2B /* DepthEstimationModel.swift */,
 				D66EE73A2B979286003E38A3 /* Alerts.swift */,
+				D694ECF32BA0C65300211F2B /* reasoning */,
+				D694ECEB2B99E9F300211F2B /* viewController */,
 				D694ECE72B99109C00211F2B /* softAlert.mp3 */,
 				D694ECE02B98EF3F00211F2B /* sampleVideos */,
 				D694ECDA2B98E5D000211F2B /* yolov5s.mlmodelc */,
 				D66EE7382B971BC7003E38A3 /* yolov5s.mlmodel */,
 				D66EE72B2B969D52003E38A3 /* Assets.xcassets */,
 				D66EE72D2B969D52003E38A3 /* Preview Content */,
+				D694ECF62BA0CAE400211F2B /* ObjectTrackingModel.swift */,
+				D694ECFB2BA1012D00211F2B /* ObjectDetectorModel.swift */,
 			);
 			path = SafeDrive;
 			sourceTree = "<group>";
@@ -123,9 +139,27 @@
 				D694ECED2B99EA1600211F2B /* Video.swift */,
 				D694ECEF2B99EA5200211F2B /* ViewController.swift */,
 				D66EE73F2B979C85003E38A3 /* Detector.swift */,
-				D694ECF12B99ED2900211F2B /* Alerts.swift */,
+				D694ECF12B99ED2900211F2B /* AlertsView.swift */,
+				D694ECF82BA0CE5B00211F2B /* ObjectTracker.swift */,
+				D694ECFF2BA1DA0500211F2B /* VideoContainerView.swift */,
 			);
 			path = viewController;
+			sourceTree = "<group>";
+		};
+		D694ECF32BA0C65300211F2B /* reasoning */ = {
+			isa = PBXGroup;
+			children = (
+				D694ECF42BA0C91800211F2B /* ReasoningModel.swift */,
+			);
+			path = reasoning;
+			sourceTree = "<group>";
+		};
+		D694ECFA2BA0FFB500211F2B /* depth */ = {
+			isa = PBXGroup;
+			children = (
+				D694ECE92B99D8DA00211F2B /* DepthEstimationModel.swift */,
+			);
+			path = depth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,13 +241,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				D66EE7392B971BC7003E38A3 /* yolov5s.mlmodel in Sources */,
+				D694ECF92BA0CE5B00211F2B /* ObjectTracker.swift in Sources */,
+				D694ECF72BA0CAE500211F2B /* ObjectTrackingModel.swift in Sources */,
 				D66EE73B2B979286003E38A3 /* Alerts.swift in Sources */,
+				D694ECFC2BA1012D00211F2B /* ObjectDetectorModel.swift in Sources */,
 				D694ECF02B99EA5200211F2B /* ViewController.swift in Sources */,
 				D694ECEA2B99D8DA00211F2B /* DepthEstimationModel.swift in Sources */,
+				D694ED002BA1DA0500211F2B /* VideoContainerView.swift in Sources */,
 				D66EE72A2B969D50003E38A3 /* ContentView.swift in Sources */,
+				D694ECFE2BA1D7C800211F2B /* CommonTypes.swift in Sources */,
 				D694ECEE2B99EA1600211F2B /* Video.swift in Sources */,
 				D66EE7282B969D50003E38A3 /* SafeDriveApp.swift in Sources */,
-				D694ECF22B99ED2900211F2B /* Alerts.swift in Sources */,
+				D694ECF22B99ED2900211F2B /* AlertsView.swift in Sources */,
+				D694ECF52BA0C91800211F2B /* ReasoningModel.swift in Sources */,
 				D66EE7402B979C85003E38A3 /* Detector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
