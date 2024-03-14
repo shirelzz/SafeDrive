@@ -32,6 +32,7 @@
 		D694ECFC2BA1012D00211F2B /* ObjectDetectorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D694ECFB2BA1012D00211F2B /* ObjectDetectorModel.swift */; };
 		D694ECFE2BA1D7C800211F2B /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D694ECFD2BA1D7C800211F2B /* CommonTypes.swift */; };
 		D694ED002BA1DA0500211F2B /* VideoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D694ECFF2BA1DA0500211F2B /* VideoContainerView.swift */; };
+		D694ED032BA2891600211F2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D694ED022BA2891600211F2B /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,9 @@
 		D694ECFB2BA1012D00211F2B /* ObjectDetectorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectorModel.swift; sourceTree = "<group>"; };
 		D694ECFD2BA1D7C800211F2B /* CommonTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTypes.swift; sourceTree = "<group>"; };
 		D694ECFF2BA1DA0500211F2B /* VideoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContainerView.swift; sourceTree = "<group>"; };
+		D694ED012BA288D700211F2B /* SafeDrive.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafeDrive.entitlements; sourceTree = "<group>"; };
+		D694ED022BA2891600211F2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D694ED042BA28A3200211F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 		D66EE7262B969D50003E38A3 /* SafeDrive */ = {
 			isa = PBXGroup;
 			children = (
+				D694ED042BA28A3200211F2B /* Info.plist */,
+				D694ED012BA288D700211F2B /* SafeDrive.entitlements */,
 				D694ECFD2BA1D7C800211F2B /* CommonTypes.swift */,
 				D694ECFA2BA0FFB500211F2B /* depth */,
 				D66EE7272B969D50003E38A3 /* SafeDriveApp.swift */,
@@ -108,6 +114,7 @@
 				D66EE72D2B969D52003E38A3 /* Preview Content */,
 				D694ECF62BA0CAE400211F2B /* ObjectTrackingModel.swift */,
 				D694ECFB2BA1012D00211F2B /* ObjectDetectorModel.swift */,
+				D694ED022BA2891600211F2B /* AppDelegate.swift */,
 			);
 			path = SafeDrive;
 			sourceTree = "<group>";
@@ -248,6 +255,7 @@
 				D694ECF02B99EA5200211F2B /* ViewController.swift in Sources */,
 				D694ECEA2B99D8DA00211F2B /* DepthEstimationModel.swift in Sources */,
 				D694ED002BA1DA0500211F2B /* VideoContainerView.swift in Sources */,
+				D694ED032BA2891600211F2B /* AppDelegate.swift in Sources */,
 				D66EE72A2B969D50003E38A3 /* ContentView.swift in Sources */,
 				D694ECFE2BA1D7C800211F2B /* CommonTypes.swift in Sources */,
 				D694ECEE2B99EA1600211F2B /* Video.swift in Sources */,
@@ -385,12 +393,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SafeDrive/SafeDrive.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SafeDrive/Preview Content\"";
 				DEVELOPMENT_TEAM = 5M6RD9L4AH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafeDrive/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -416,12 +426,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SafeDrive/SafeDrive.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SafeDrive/Preview Content\"";
 				DEVELOPMENT_TEAM = 5M6RD9L4AH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafeDrive/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

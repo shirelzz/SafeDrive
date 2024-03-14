@@ -14,8 +14,8 @@ extension ViewController {
     // Function to send banner alerts
     func sendBannerAlert() {
         let content = UNMutableNotificationContent()
-        content.title = "Person Detected"
-        content.body = "A person has been detected in the video."
+        content.title = "Warning"
+         content.body = "Potential hazard detected!"
         content.sound = .default
         
         let request = UNNotificationRequest(identifier: "PersonDetected", content: content, trigger: nil)
@@ -37,5 +37,10 @@ extension ViewController {
         } catch {
             print("Error playing sound: \(error.localizedDescription)")
         }
+    }
+    
+    func triggerHapticFeedback() {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.warning)
     }
 }

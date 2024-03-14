@@ -13,10 +13,6 @@ extension ViewController {
     
     func setupVideoPlayer() {
         
-//        self.videoView = VideoContainerView()
-//        self.videoView.frame = self.view.bounds
-//        self.videoView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        
         let videos = ["cityDrive", "roadPortrait", "cityPort", "trafficLightPort", "crossStreetPort", "standRoad"]
         guard let filePath = Bundle.main.path(forResource: videos[1], ofType: "mp4") else {
             print("Video file not found")
@@ -37,21 +33,11 @@ extension ViewController {
         playerLayer.videoGravity = .resizeAspect
         view.layer.addSublayer(playerLayer)
         
-//        self.playerLayer.frame = self.videoView.bounds
-//        self.playerLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-//        self.videoView.layer.addSublayer(playerLayer)
-//        self.videoView.layer.masksToBounds = true
-//        self.view.addSubview(self.videoView)
-        
-        
         player.play()
         player.rate = 0.4
         
         // Process frames
         processVideoFrames()
-        
-        // Set the video gravity to "resizeAspectFill"
-//        playerLayer.videoGravity = .resizeAspectFill
 
         // Add observer for device orientation changes
         let notificationCenter = NotificationCenter.default

@@ -61,6 +61,7 @@ struct TrackedPolyRect {
     var bottomRight: CGPoint
     var color: UIColor
     var style: TrackedPolyRectStyle
+    var lastObservation: VNDetectedObjectObservation?
     
     var cornerPoints: [CGPoint] {
         return [topLeft, topRight, bottomRight, bottomLeft]
@@ -80,10 +81,18 @@ struct TrackedPolyRect {
     }
     
     init(observation: VNRectangleObservation, color: UIColor, style: TrackedPolyRectStyle = .solid) {
-        topLeft = observation.topLeft
-        topRight = observation.topRight
-        bottomLeft = observation.bottomLeft
-        bottomRight = observation.bottomRight
+        self.lastObservation = observation
+        let cgRect = observation.boundingBox
+        topLeft = CGPoint(x: cgRect.minX, y: cgRect.maxY)
+        topRight = CGPoint(x: cgRect.maxX, y: cgRect.maxY)
+        bottomLeft = CGPoint(x: cgRect.minX, y: cgRect.minY)
+        bottomRight = CGPoint(x: cgRect.maxX, y: cgRect.minY)
+
+//        topLeft = observation.topLeft
+//        topRight = observation.topRight
+//        bottomLeft = observation.bottomLeft
+//        bottomRight = observation.bottomRight
+        
         self.color = color
         self.style = style
     }
@@ -96,5 +105,6 @@ struct TrackedPolyRect {
         self.color = color
         self.style = style
     }
+
 }
 
