@@ -12,7 +12,7 @@ import Vision
 import CoreML
 import AVKit
 
-class ViewController: UIViewController, DetectionDelegate {
+class ViewController: UIViewController, DetectionDelegate, UNUserNotificationCenterDelegate {
     
     var detectionHandler: DetectionHandler!
 
@@ -24,8 +24,13 @@ class ViewController: UIViewController, DetectionDelegate {
     var screenRect: CGRect! = UIScreen.main.bounds
     var audioPlayer: AVAudioPlayer?
     
+    // Dictionary to store the last sent time for each hazard type
+    var lastSentTime: [String: Date] = [:]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        requestAuthorization()
+        
         setupVideoPlayer()
         
         detectionHandler = DetectionHandler(modelName: "yolov5s")
@@ -42,8 +47,8 @@ class ViewController: UIViewController, DetectionDelegate {
         playerLayer.addSublayer(detectionLayer)
     }
     
-    func RequestAuthorization(){
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+    func requestAuthorization(){
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .carPlay, .sound]) { (granted, error) in
             if granted {
                 print("Notification authorization granted")
             } else {
@@ -66,8 +71,9 @@ class ViewController: UIViewController, DetectionDelegate {
             }
             
             if observation.labels.first?.identifier == "car" && observation.confidence > 0.8 {
-//                self.playSoundAlert()
-                self.sendBannerAlert()
+//                self.playSoundAlert() // works
+                self.sendBannerAlert(hazardType: "car")
+//                self.triggerHapticFeedback() // works
 
             }
             

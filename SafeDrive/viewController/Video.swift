@@ -42,7 +42,16 @@ extension ViewController {
         // Add observer for device orientation changes
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(handleOrientationChange), name: UIDevice.orientationDidChangeNotification, object: nil)
+        
+        // Add observer for end of video playback
+        notificationCenter.addObserver(self, selector: #selector(playerDidFinishPlaying(_:)), name: .AVPlayerItemDidPlayToEndTime, object: player.currentItem)
 
+
+    }
+    
+    @objc func playerDidFinishPlaying(_ notification: Notification) {
+        player.seek(to: CMTime.zero) // Move the playback to the beginning
+        player.play() // Start playing again
     }
     
     func retrievePixelBufferAtCurrentTime() -> CVPixelBuffer? {

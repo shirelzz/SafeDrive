@@ -97,6 +97,7 @@
 		D66EE7262B969D50003E38A3 /* SafeDrive */ = {
 			isa = PBXGroup;
 			children = (
+				D694ED022BA2891600211F2B /* AppDelegate.swift */,
 				D694ED042BA28A3200211F2B /* Info.plist */,
 				D694ED012BA288D700211F2B /* SafeDrive.entitlements */,
 				D694ECFD2BA1D7C800211F2B /* CommonTypes.swift */,
@@ -114,7 +115,6 @@
 				D66EE72D2B969D52003E38A3 /* Preview Content */,
 				D694ECF62BA0CAE400211F2B /* ObjectTrackingModel.swift */,
 				D694ECFB2BA1012D00211F2B /* ObjectDetectorModel.swift */,
-				D694ED022BA2891600211F2B /* AppDelegate.swift */,
 			);
 			path = SafeDrive;
 			sourceTree = "<group>";
@@ -401,6 +401,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SafeDrive/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Safe Drive";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -434,6 +435,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SafeDrive/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Safe Drive";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
