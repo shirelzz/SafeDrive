@@ -1,5 +1,5 @@
 //
-//  ObjectDetectorModel.swift
+//  DetectionHandler.swift
 //  SafeDrive
 //
 //  Created by שיראל זכריה on 12/03/2024.

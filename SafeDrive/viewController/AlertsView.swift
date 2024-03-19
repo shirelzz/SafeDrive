@@ -18,7 +18,7 @@ extension ViewController {
         print("sending banner alert")
         
         // Check if the last sent time for this hazard type is within the cooldown period
-        if let lastSent = lastSentTime[hazardType], Date().timeIntervalSince(lastSent) < 5 {
+        if let lastSent = lastSentTime[hazardType], Date().timeIntervalSince(lastSent) < 10 {
             print("Alert already sent for \(hazardType) within cooldown period.")
             return
         }
