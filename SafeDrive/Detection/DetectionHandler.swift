@@ -84,17 +84,17 @@ class DetectionHandler {
     private func isHazardNearby(_ pixelBuffer: CVPixelBuffer) -> Bool {
         print("isHazardNearby")
 
-        // Simulate proximity assessment by estimating depth from the image
+//        // Simulate proximity assessment by estimating depth from the image
+//        
+//        let depthEstimationModel = DepthEstimationModel()
+//        
+//        guard let depthMap = depthEstimationModel.estimateDepth(from: pixelBuffer) else {
+//            fatalError("Failed to estimate depth from image")
+//        }
+//        
+//        let hazardsNearby = depthMap.containsNearbyHazards()
         
-        let depthEstimationModel = DepthEstimationModel()
-        
-        guard let depthMap = depthEstimationModel.estimateDepth(from: pixelBuffer) else {
-            fatalError("Failed to estimate depth from image")
-        }
-        
-        let hazardsNearby = depthMap.containsNearbyHazards()
-        
-        return hazardsNearby
+        return false // hazardsNearby
     }
     
 }

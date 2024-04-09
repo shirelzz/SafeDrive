@@ -14,7 +14,6 @@
 		D66EE7392B971BC7003E38A3 /* yolov5s.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D66EE7382B971BC7003E38A3 /* yolov5s.mlmodel */; };
 		D66EE73B2B979286003E38A3 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66EE73A2B979286003E38A3 /* Alerts.swift */; };
 		D66EE7402B979C85003E38A3 /* Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66EE73F2B979C85003E38A3 /* Detector.swift */; };
-		D684DC612BA9CF4D00018186 /* FCRNFP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D684DC602BA9CF4D00018186 /* FCRNFP16.mlmodel */; };
 		D684DC632BA9D00B00018186 /* DepthEstimationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D684DC622BA9D00B00018186 /* DepthEstimationHandler.swift */; };
 		D694ECD92B98E51E00211F2B /* cityDrive.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D66EE73D2B9794AC003E38A3 /* cityDrive.mp4 */; };
 		D694ECDB2B98E5D000211F2B /* yolov5s.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = D694ECDA2B98E5D000211F2B /* yolov5s.mlmodelc */; };
@@ -35,6 +34,8 @@
 		D694ECFE2BA1D7C800211F2B /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D694ECFD2BA1D7C800211F2B /* CommonTypes.swift */; };
 		D694ED002BA1DA0500211F2B /* VideoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D694ECFF2BA1DA0500211F2B /* VideoContainerView.swift */; };
 		D694ED032BA2891600211F2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D694ED022BA2891600211F2B /* AppDelegate.swift */; };
+		D6F4351C2BC5914F0038938F /* ObjectDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F4351B2BC5914F0038938F /* ObjectDetectionView.swift */; };
+		D6F4351E2BC5918A0038938F /* DepthEstimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F4351D2BC5918A0038938F /* DepthEstimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +48,6 @@
 		D66EE73A2B979286003E38A3 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		D66EE73D2B9794AC003E38A3 /* cityDrive.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cityDrive.mp4; sourceTree = "<group>"; };
 		D66EE73F2B979C85003E38A3 /* Detector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detector.swift; sourceTree = "<group>"; };
-		D684DC602BA9CF4D00018186 /* FCRNFP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FCRNFP16.mlmodel; sourceTree = "<group>"; };
 		D684DC622BA9D00B00018186 /* DepthEstimationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthEstimationHandler.swift; sourceTree = "<group>"; };
 		D694ECDA2B98E5D000211F2B /* yolov5s.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = yolov5s.mlmodelc; sourceTree = "<group>"; };
 		D694ECDC2B98E79100211F2B /* roadPortrait.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = roadPortrait.mp4; sourceTree = "<group>"; };
@@ -69,6 +69,8 @@
 		D694ED012BA288D700211F2B /* SafeDrive.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafeDrive.entitlements; sourceTree = "<group>"; };
 		D694ED022BA2891600211F2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D694ED042BA28A3200211F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D6F4351B2BC5914F0038938F /* ObjectDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionView.swift; sourceTree = "<group>"; };
+		D6F4351D2BC5918A0038938F /* DepthEstimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthEstimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,26 +103,24 @@
 		D66EE7262B969D50003E38A3 /* SafeDrive */ = {
 			isa = PBXGroup;
 			children = (
-				D684DC602BA9CF4D00018186 /* FCRNFP16.mlmodel */,
-				D694ED022BA2891600211F2B /* AppDelegate.swift */,
-				D694ED042BA28A3200211F2B /* Info.plist */,
 				D694ED012BA288D700211F2B /* SafeDrive.entitlements */,
-				D694ECFD2BA1D7C800211F2B /* CommonTypes.swift */,
-				D694ECFA2BA0FFB500211F2B /* depth */,
+				D694ED042BA28A3200211F2B /* Info.plist */,
 				D66EE7272B969D50003E38A3 /* SafeDriveApp.swift */,
-				D66EE7292B969D50003E38A3 /* ContentView.swift */,
-				D66EE73A2B979286003E38A3 /* Alerts.swift */,
-				D694ECF32BA0C65300211F2B /* reasoning */,
-				D694ECEB2B99E9F300211F2B /* viewController */,
+				D694ED022BA2891600211F2B /* AppDelegate.swift */,
+				D6F4351A2BC590080038938F /* Utils */,
+				D6F435192BC58FE40038938F /* MainViews */,
+				D6F435182BC58FDA0038938F /* Detection */,
+				D694ECFD2BA1D7C800211F2B /* CommonTypes.swift */,
+				D694ECFA2BA0FFB500211F2B /* DepthEstimation */,
+				D694ECF32BA0C65300211F2B /* Reasoning */,
+				D694ECEB2B99E9F300211F2B /* ViewController */,
 				D694ECE72B99109C00211F2B /* softAlert.mp3 */,
-				D694ECE02B98EF3F00211F2B /* sampleVideos */,
+				D694ECE02B98EF3F00211F2B /* SampleVideos */,
 				D694ECDA2B98E5D000211F2B /* yolov5s.mlmodelc */,
 				D66EE7382B971BC7003E38A3 /* yolov5s.mlmodel */,
 				D66EE72B2B969D52003E38A3 /* Assets.xcassets */,
 				D66EE72D2B969D52003E38A3 /* Preview Content */,
 				D694ECF62BA0CAE400211F2B /* ObjectTrackingModel.swift */,
-				D694ECFB2BA1012D00211F2B /* DetectionHandler.swift */,
-				D684DC622BA9D00B00018186 /* DepthEstimationHandler.swift */,
 			);
 			path = SafeDrive;
 			sourceTree = "<group>";
@@ -133,7 +133,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		D694ECE02B98EF3F00211F2B /* sampleVideos */ = {
+		D694ECE02B98EF3F00211F2B /* SampleVideos */ = {
 			isa = PBXGroup;
 			children = (
 				D694ECE52B9902AE00211F2B /* standRoad.mp4 */,
@@ -143,10 +143,10 @@
 				D66EE73D2B9794AC003E38A3 /* cityDrive.mp4 */,
 				D694ECDC2B98E79100211F2B /* roadPortrait.mp4 */,
 			);
-			path = sampleVideos;
+			path = SampleVideos;
 			sourceTree = "<group>";
 		};
-		D694ECEB2B99E9F300211F2B /* viewController */ = {
+		D694ECEB2B99E9F300211F2B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				D694ECED2B99EA1600211F2B /* Video.swift */,
@@ -156,23 +156,50 @@
 				D694ECF82BA0CE5B00211F2B /* ObjectTracker.swift */,
 				D694ECFF2BA1DA0500211F2B /* VideoContainerView.swift */,
 			);
-			path = viewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
-		D694ECF32BA0C65300211F2B /* reasoning */ = {
+		D694ECF32BA0C65300211F2B /* Reasoning */ = {
 			isa = PBXGroup;
 			children = (
 				D694ECF42BA0C91800211F2B /* ReasoningModel.swift */,
 			);
-			path = reasoning;
+			path = Reasoning;
 			sourceTree = "<group>";
 		};
-		D694ECFA2BA0FFB500211F2B /* depth */ = {
+		D694ECFA2BA0FFB500211F2B /* DepthEstimation */ = {
 			isa = PBXGroup;
 			children = (
+				D684DC622BA9D00B00018186 /* DepthEstimationHandler.swift */,
 				D694ECE92B99D8DA00211F2B /* DepthEstimationModel.swift */,
 			);
-			path = depth;
+			path = DepthEstimation;
+			sourceTree = "<group>";
+		};
+		D6F435182BC58FDA0038938F /* Detection */ = {
+			isa = PBXGroup;
+			children = (
+				D694ECFB2BA1012D00211F2B /* DetectionHandler.swift */,
+			);
+			path = Detection;
+			sourceTree = "<group>";
+		};
+		D6F435192BC58FE40038938F /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				D66EE7292B969D50003E38A3 /* ContentView.swift */,
+				D6F4351B2BC5914F0038938F /* ObjectDetectionView.swift */,
+				D6F4351D2BC5918A0038938F /* DepthEstimationView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		D6F4351A2BC590080038938F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D66EE73A2B979286003E38A3 /* Alerts.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,14 +287,15 @@
 				D694ECFC2BA1012D00211F2B /* DetectionHandler.swift in Sources */,
 				D694ECF02B99EA5200211F2B /* ViewController.swift in Sources */,
 				D694ECEA2B99D8DA00211F2B /* DepthEstimationModel.swift in Sources */,
+				D6F4351C2BC5914F0038938F /* ObjectDetectionView.swift in Sources */,
 				D684DC632BA9D00B00018186 /* DepthEstimationHandler.swift in Sources */,
 				D694ED002BA1DA0500211F2B /* VideoContainerView.swift in Sources */,
 				D694ED032BA2891600211F2B /* AppDelegate.swift in Sources */,
 				D66EE72A2B969D50003E38A3 /* ContentView.swift in Sources */,
 				D694ECFE2BA1D7C800211F2B /* CommonTypes.swift in Sources */,
+				D6F4351E2BC5918A0038938F /* DepthEstimationView.swift in Sources */,
 				D694ECEE2B99EA1600211F2B /* Video.swift in Sources */,
 				D66EE7282B969D50003E38A3 /* SafeDriveApp.swift in Sources */,
-				D684DC612BA9CF4D00018186 /* FCRNFP16.mlmodel in Sources */,
 				D694ECF22B99ED2900211F2B /* AlertsView.swift in Sources */,
 				D694ECF52BA0C91800211F2B /* ReasoningModel.swift in Sources */,
 				D66EE7402B979C85003E38A3 /* Detector.swift in Sources */,
