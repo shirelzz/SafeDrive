@@ -14,16 +14,20 @@ struct ContentView: View {
         //                    .ignoresSafeArea()
         
         TabView {
+            
             ObjectDetectionView() // UIKitViewControllerRepresentable
                 .tabItem {
                     Label("Object Detection", systemImage: "rectangle.stack.fill")
                         .padding(10)
                 }
+                .padding()
+            
             DepthEstimationView()
                 .tabItem {
                     Label("Depth Estimation", systemImage: "square.stack.fill")
                         .padding(10)
                 }
+                .padding()
         }
         
     }

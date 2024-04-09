@@ -36,6 +36,7 @@
 		D694ED032BA2891600211F2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D694ED022BA2891600211F2B /* AppDelegate.swift */; };
 		D6F4351C2BC5914F0038938F /* ObjectDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F4351B2BC5914F0038938F /* ObjectDetectionView.swift */; };
 		D6F4351E2BC5918A0038938F /* DepthEstimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F4351D2BC5918A0038938F /* DepthEstimationView.swift */; };
+		D6F435202BC59EA40038938F /* FCRNFP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D6F4351F2BC59EA40038938F /* FCRNFP16.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		D694ED042BA28A3200211F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D6F4351B2BC5914F0038938F /* ObjectDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionView.swift; sourceTree = "<group>"; };
 		D6F4351D2BC5918A0038938F /* DepthEstimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthEstimationView.swift; sourceTree = "<group>"; };
+		D6F4351F2BC59EA40038938F /* FCRNFP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FCRNFP16.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		D66EE7262B969D50003E38A3 /* SafeDrive */ = {
 			isa = PBXGroup;
 			children = (
+				D6F4351F2BC59EA40038938F /* FCRNFP16.mlmodel */,
 				D694ED012BA288D700211F2B /* SafeDrive.entitlements */,
 				D694ED042BA28A3200211F2B /* Info.plist */,
 				D66EE7272B969D50003E38A3 /* SafeDriveApp.swift */,
@@ -298,6 +301,7 @@
 				D66EE7282B969D50003E38A3 /* SafeDriveApp.swift in Sources */,
 				D694ECF22B99ED2900211F2B /* AlertsView.swift in Sources */,
 				D694ECF52BA0C91800211F2B /* ReasoningModel.swift in Sources */,
+				D6F435202BC59EA40038938F /* FCRNFP16.mlmodel in Sources */,
 				D66EE7402B979C85003E38A3 /* Detector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
