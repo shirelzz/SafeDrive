@@ -9,7 +9,7 @@ import Vision
 import CoreML
 import UIKit
 
-extension ViewController {
+extension ObjectDetectionVC {
     
 
 }

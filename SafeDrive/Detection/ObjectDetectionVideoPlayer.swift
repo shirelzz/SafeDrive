@@ -1,5 +1,5 @@
 //
-//  Video.swift
+//  ObjectDetectionVideoPlayer.swift
 //  SafeDrive
 //
 //  Created by שיראל זכריה on 07/03/2024.
@@ -9,7 +9,7 @@ import SwiftUI
 import AVFoundation
 import UIKit
 
-extension ViewController {
+extension ObjectDetectionVC {
     
     func setupVideoPlayer() {
         

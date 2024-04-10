@@ -12,13 +12,14 @@ import Vision
 import CoreML
 import AVKit
 
-class ViewController: UIViewController, DetectionDelegate, UNUserNotificationCenterDelegate {
+class ObjectDetectionVC: UIViewController, DetectionDelegate, UNUserNotificationCenterDelegate {
     
     var detectionHandler: DetectionHandler!
 
     var player: AVPlayer!
     var playerLayer: AVPlayerLayer!
     var videoOutput: AVPlayerItemVideoOutput!
+    
     var requests = [VNRequest]()
     var detectionLayer: CALayer!
     var screenRect: CGRect! = UIScreen.main.bounds
@@ -165,7 +166,7 @@ class ViewController: UIViewController, DetectionDelegate, UNUserNotificationCen
     
     func processVideoFrames() {
         print("processVideoFrames")
-        let interval = CMTime(value: 1, timescale: 30) // frame per second
+        let interval = CMTime(value: 1, timescale: 30) // frames per second
         player.addPeriodicTimeObserver(forInterval: interval, queue: DispatchQueue.main) { [weak self] _ in
             guard let self = self, let pixelBuffer = self.retrievePixelBufferAtCurrentTime() else { return }
             detectionHandler.detectObjects(in: pixelBuffer)
@@ -176,7 +177,7 @@ class ViewController: UIViewController, DetectionDelegate, UNUserNotificationCen
 
 struct HostedViewController: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIViewController {
-        return ViewController()
+        return ObjectDetectionVC()
         }
 
         func updateUIViewController(_ uiViewController: UIViewController, context: Context) {

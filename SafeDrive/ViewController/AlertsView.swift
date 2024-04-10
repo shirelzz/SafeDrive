@@ -9,7 +9,7 @@ import SwiftUI
 import UIKit
 import AVFoundation
 
-extension ViewController {
+extension ObjectDetectionVC {
 
     // make sure to not send the same alert within the time the alert is already playing
 

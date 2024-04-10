@@ -17,17 +17,15 @@ struct ContentView: View {
             
             ObjectDetectionView() // UIKitViewControllerRepresentable
                 .tabItem {
-                    Label("Object Detection", systemImage: "rectangle.stack.fill")
-                        .padding(10)
+                    Label("Object Detection", systemImage: "eyeglasses")
+                        .padding()
                 }
-                .padding()
             
             DepthEstimationView()
                 .tabItem {
-                    Label("Depth Estimation", systemImage: "square.stack.fill")
-                        .padding(10)
+                    Label("Depth Estimation", systemImage: "square.stack.3d.down.dottedline")
+                        .padding()
                 }
-                .padding()
         }
         
     }

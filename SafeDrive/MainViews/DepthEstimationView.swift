@@ -9,7 +9,9 @@ import SwiftUI
 
 struct DepthEstimationView: View {
     var body: some View {
-        Text("Hello, World!")
+        
+        HostedDepthEstimationViewController()
+            .ignoresSafeArea()
     }
 }
 
