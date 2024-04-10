@@ -1,0 +1,1648 @@
+{
+  "layer_shapes" : {
+    "res4b:0" : {
+      "k" : 1024,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "layer2x_br2_BN\/layer2x_br2_BN\/mul:0" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "concat:0_concat" : {
+      "k" : 20,
+      "w" : 512,
+      "n" : 1,
+      "h" : 8
+    },
+    "concat_7:0_concat" : {
+      "k" : 40,
+      "w" : 256,
+      "n" : 1,
+      "h" : 16
+    },
+    "bn2c_branch2b\/Relu:0" : {
+      "k" : 64,
+      "w" : 76,
+      "n" : 1,
+      "h" : 57
+    },
+    "concat_22:0" : {
+      "k" : 64,
+      "w" : 160,
+      "n" : 1,
+      "h" : 64
+    },
+    "Reshape_11:0" : {
+      "k" : 256,
+      "w" : 40,
+      "n" : 1,
+      "h" : 32
+    },
+    "Reshape_3:0" : {
+      "k" : 512,
+      "w" : 10,
+      "n" : 1,
+      "h" : 16
+    },
+    "layer8x_br1_ConvD\/BiasAdd:0_swap_W_C_1" : {
+      "k" : 40,
+      "w" : 128,
+      "n" : 1,
+      "h" : 32
+    },
+    "layer8x_br1_ConvC\/BiasAdd:0" : {
+      "k" : 128,
+      "w" : 40,
+      "n" : 1,
+      "h" : 32
+    },
+    "res4a_relu:0" : {
+      "k" : 1024,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "concat_17:0" : {
+      "k" : 256,
+      "w" : 40,
+      "n" : 1,
+      "h" : 64
+    },
+    "layer2x_br1_ConvA\/BiasAdd:0" : {
+      "k" : 512,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "Reshape_22:0" : {
+      "k" : 64,
+      "w" : 80,
+      "n" : 1,
+      "h" : 128
+    },
+    "image__fix__underflow_____conv1\/Conv2D:0" : {
+      "k" : 3,
+      "w" : 304,
+      "n" : 1,
+      "h" : 228
+    },
+    "bn3c_branch2a\/Relu:0" : {
+      "k" : 128,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "bn2b_branch2b\/Relu:0" : {
+      "k" : 64,
+      "w" : 76,
+      "n" : 1,
+      "h" : 57
+    },
+    "layer2x_br2_ConvB\/BiasAdd:0_swap_W_C_1" : {
+      "k" : 10,
+      "w" : 512,
+      "n" : 1,
+      "h" : 8
+    },
+    "layer2x_br1_BN_1:0" : {
+      "k" : 512,
+      "w" : 20,
+      "n" : 1,
+      "h" : 16
+    },
+    "concat_2:0" : {
+      "k" : 1024,
+      "w" : 10,
+      "n" : 1,
+      "h" : 16
+    },
+    "bn5c_branch2c\/bn5c_branch2c\/add_1:0" : {
+      "k" : 2048,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "layer4x_br2_ConvB\/BiasAdd:0" : {
+      "k" : 256,
+      "w" : 20,
+      "n" : 1,
+      "h" : 16
+    },
+    "bn4e_branch2c\/bn4e_branch2c\/add_1:0" : {
+      "k" : 1024,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "concat_23:0" : {
+      "k" : 128,
+      "w" : 80,
+      "n" : 1,
+      "h" : 128
+    },
+    "res3d:0" : {
+      "k" : 512,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "layer8x_br2_ConvD\/BiasAdd:0_swap_W_C_1" : {
+      "k" : 40,
+      "w" : 128,
+      "n" : 1,
+      "h" : 32
+    },
+    "layer8x_br1_BN\/layer8x_br1_BN\/mul_1:0" : {
+      "k" : 128,
+      "w" : 80,
+      "n" : 1,
+      "h" : 64
+    },
+    "Reshape_4:0" : {
+      "k" : 512,
+      "w" : 10,
+      "n" : 1,
+      "h" : 16
+    },
+    "layer8x_br2_BN\/layer8x_br2_BN\/add_1:0" : {
+      "k" : 128,
+      "w" : 80,
+      "n" : 1,
+      "h" : 64
+    },
+    "concat_9:0_concat" : {
+      "k" : 40,
+      "w" : 256,
+      "n" : 1,
+      "h" : 16
+    },
+    "layer8x_BN\/layer8x_BN\/add_1:0" : {
+      "k" : 128,
+      "w" : 80,
+      "n" : 1,
+      "h" : 64
+    },
+    "layer2x_br1_ConvB\/BiasAdd:0_swap_W_C_1" : {
+      "k" : 10,
+      "w" : 512,
+      "n" : 1,
+      "h" : 8
+    },
+    "layer4x_br1_ConvB\/BiasAdd:0_swap_W_C_1" : {
+      "k" : 20,
+      "w" : 256,
+      "n" : 1,
+      "h" : 16
+    },
+    "res4a:0" : {
+      "k" : 1024,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "concat_18:0" : {
+      "k" : 64,
+      "w" : 160,
+      "n" : 1,
+      "h" : 64
+    },
+    "Reshape_20:0" : {
+      "k" : 64,
+      "w" : 160,
+      "n" : 1,
+      "h" : 128
+    },
+    "res3c_relu:0" : {
+      "k" : 512,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "bn3d_branch2a\/Relu:0" : {
+      "k" : 128,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "layer4x_br1_ConvD\/BiasAdd:0" : {
+      "k" : 256,
+      "w" : 20,
+      "n" : 1,
+      "h" : 16
+    },
+    "bn_conv1\/Relu:0" : {
+      "k" : 64,
+      "w" : 152,
+      "n" : 1,
+      "h" : 114
+    },
+    "layer8x_br1_BN\/layer8x_br1_BN\/sub:0" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "layer8x_br1_ConvB\/BiasAdd:0" : {
+      "k" : 128,
+      "w" : 40,
+      "n" : 1,
+      "h" : 32
+    },
+    "res4e_relu:0" : {
+      "k" : 1024,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "layer8x_br1_BN\/layer8x_br1_BN\/mul:0" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "bn2b_branch2c\/bn2b_branch2c\/add_1:0" : {
+      "k" : 256,
+      "w" : 76,
+      "n" : 1,
+      "h" : 57
+    },
+    "bn5a_branch1\/bn5a_branch1\/add_1:0" : {
+      "k" : 2048,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "layer2x_BN\/layer2x_BN\/add_1:0" : {
+      "k" : 512,
+      "w" : 20,
+      "n" : 1,
+      "h" : 16
+    },
+    "layer1_BN\/layer1_BN\/sub:0" : {
+      "k" : 1024,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "Reshape_5:0" : {
+      "k" : 512,
+      "w" : 20,
+      "n" : 1,
+      "h" : 16
+    },
+    "layer4x_br2_ConvB\/BiasAdd:0_swap_W_C_1" : {
+      "k" : 20,
+      "w" : 256,
+      "n" : 1,
+      "h" : 16
+    },
+    "concat_5:0" : {
+      "k" : 1024,
+      "w" : 10,
+      "n" : 1,
+      "h" : 16
+    },
+    "concat_19:0" : {
+      "k" : 64,
+      "w" : 160,
+      "n" : 1,
+      "h" : 64
+    },
+    "bn5a_branch2b\/Relu:0" : {
+      "k" : 512,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "res5b_relu:0" : {
+      "k" : 2048,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "layer16x_br1_BN\/layer16x_br1_BN\/sub:0" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "res3c:0" : {
+      "k" : 512,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "bn2b_branch2a\/Relu:0" : {
+      "k" : 64,
+      "w" : 76,
+      "n" : 1,
+      "h" : 57
+    },
+    "res2a_relu:0" : {
+      "k" : 256,
+      "w" : 76,
+      "n" : 1,
+      "h" : 57
+    },
+    "layer16x_br2_BN\/layer16x_br2_BN\/mul:0" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "layer16x_br1_BN_1:0" : {
+      "k" : 64,
+      "w" : 160,
+      "n" : 1,
+      "h" : 128
+    },
+    "layer4x_br1_ConvC\/BiasAdd:0" : {
+      "k" : 256,
+      "w" : 20,
+      "n" : 1,
+      "h" : 16
+    },
+    "layer8x_br1_ConvB\/BiasAdd:0_swap_W_C_1" : {
+      "k" : 40,
+      "w" : 128,
+      "n" : 1,
+      "h" : 32
+    },
+    "bn4b_branch2c\/bn4b_branch2c\/add_1:0" : {
+      "k" : 1024,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "Reshape_6:0" : {
+      "k" : 256,
+      "w" : 20,
+      "n" : 1,
+      "h" : 32
+    },
+    "layer8x_br1_ConvA\/BiasAdd:0" : {
+      "k" : 128,
+      "w" : 40,
+      "n" : 1,
+      "h" : 32
+    },
+    "bn2a_branch2a\/Relu:0" : {
+      "k" : 64,
+      "w" : 76,
+      "n" : 1,
+      "h" : 57
+    },
+    "layer2x_ReLU:0" : {
+      "k" : 512,
+      "w" : 20,
+      "n" : 1,
+      "h" : 16
+    },
+    "layer8x_br1_BN_1:0" : {
+      "k" : 128,
+      "w" : 80,
+      "n" : 1,
+      "h" : 64
+    },
+    "bn3d_branch2c\/bn3d_branch2c\/add_1:0" : {
+      "k" : 512,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "layer16x_br2_ConvD\/BiasAdd:0" : {
+      "k" : 64,
+      "w" : 80,
+      "n" : 1,
+      "h" : 64
+    },
+    "bn_conv1\/bn_conv1\/sub:0" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "bn5b_branch2b\/Relu:0" : {
+      "k" : 512,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "bn2c_branch2a\/Relu:0" : {
+      "k" : 64,
+      "w" : 76,
+      "n" : 1,
+      "h" : 57
+    },
+    "layer16x_BN\/layer16x_BN\/sub:0" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "res4d_relu:0" : {
+      "k" : 1024,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "layer4x_br2_ConvA\/BiasAdd:0" : {
+      "k" : 256,
+      "w" : 20,
+      "n" : 1,
+      "h" : 16
+    },
+    "layer8x_br2_ConvB\/BiasAdd:0_swap_W_C_1" : {
+      "k" : 40,
+      "w" : 128,
+      "n" : 1,
+      "h" : 32
+    },
+    "concat_8:0" : {
+      "k" : 512,
+      "w" : 20,
+      "n" : 1,
+      "h" : 32
+    },
+    "layer8x_br1_BN\/layer8x_br1_BN\/add_1:0" : {
+      "k" : 128,
+      "w" : 80,
+      "n" : 1,
+      "h" : 64
+    },
+    "depthmap" : {
+      "k" : 1,
+      "w" : 160,
+      "n" : 1,
+      "h" : 128
+    },
+    "layer2x_br2_BN\/layer2x_br2_BN\/mul_1:0" : {
+      "k" : 512,
+      "w" : 20,
+      "n" : 1,
+      "h" : 16
+    },
+    "Reshape_18:0" : {
+      "k" : 64,
+      "w" : 80,
+      "n" : 1,
+      "h" : 128
+    },
+    "Reshape_7:0" : {
+      "k" : 256,
+      "w" : 20,
+      "n" : 1,
+      "h" : 32
+    },
+    "layer16x_br2_ConvC\/BiasAdd:0" : {
+      "k" : 64,
+      "w" : 80,
+      "n" : 1,
+      "h" : 64
+    },
+    "res3b:0" : {
+      "k" : 512,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "bn2a_branch1\/bn2a_branch1\/add_1:0" : {
+      "k" : 256,
+      "w" : 76,
+      "n" : 1,
+      "h" : 57
+    },
+    "layer2x_BN\/layer2x_BN\/sub:0" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "layer1_BN\/layer1_BN\/add_1:0" : {
+      "k" : 1024,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "layer16x_br2_ConvA\/BiasAdd:0" : {
+      "k" : 64,
+      "w" : 80,
+      "n" : 1,
+      "h" : 64
+    },
+    "ConvPred\/BiasAdd:0" : {
+      "k" : 1,
+      "w" : 160,
+      "n" : 1,
+      "h" : 128
+    },
+    "bn5c_branch2b\/Relu:0" : {
+      "k" : 512,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "layer4x_br1_ConvB\/BiasAdd:0" : {
+      "k" : 256,
+      "w" : 20,
+      "n" : 1,
+      "h" : 16
+    },
+    "layer4x_ReLU:0" : {
+      "k" : 256,
+      "w" : 40,
+      "n" : 1,
+      "h" : 32
+    },
+    "layer16x_br2_BN\/layer16x_br2_BN\/add_1:0" : {
+      "k" : 64,
+      "w" : 160,
+      "n" : 1,
+      "h" : 128
+    },
+    "layer2x_br2_ConvC\/BiasAdd:0_swap_W_C_0" : {
+      "k" : 10,
+      "w" : 512,
+      "n" : 1,
+      "h" : 8
+    },
+    "Reshape_16:0" : {
+      "k" : 128,
+      "w" : 40,
+      "n" : 1,
+      "h" : 64
+    },
+    "res3b_relu:0" : {
+      "k" : 512,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "layer16x_br2_ConvB\/BiasAdd:0" : {
+      "k" : 64,
+      "w" : 80,
+      "n" : 1,
+      "h" : 64
+    },
+    "Reshape_8:0" : {
+      "k" : 256,
+      "w" : 40,
+      "n" : 1,
+      "h" : 32
+    },
+    "ConvPred\/Conv2D:0" : {
+      "k" : 1,
+      "w" : 160,
+      "n" : 1,
+      "h" : 128
+    },
+    "bn5a_branch2c\/bn5a_branch2c\/add_1:0" : {
+      "k" : 2048,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "layer2x_br1_ConvC\/BiasAdd:0_swap_W_C_0" : {
+      "k" : 10,
+      "w" : 512,
+      "n" : 1,
+      "h" : 8
+    },
+    "layer4x_br1_ConvC\/BiasAdd:0_swap_W_C_0" : {
+      "k" : 20,
+      "w" : 256,
+      "n" : 1,
+      "h" : 16
+    },
+    "layer16x_br2_BN\/layer16x_br2_BN\/mul_1:0" : {
+      "k" : 64,
+      "w" : 160,
+      "n" : 1,
+      "h" : 128
+    },
+    "bn3a_branch2c\/bn3a_branch2c\/add_1:0" : {
+      "k" : 512,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "layer8x_br2_BN\/layer8x_br2_BN\/sub:0" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "bn4a_branch2b\/Relu:0" : {
+      "k" : 256,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "bn2c_branch2c\/bn2c_branch2c\/add_1:0" : {
+      "k" : 256,
+      "w" : 76,
+      "n" : 1,
+      "h" : 57
+    },
+    "layer8x_br2_BN\/layer8x_br2_BN\/mul:0" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "Reshape_14:0" : {
+      "k" : 128,
+      "w" : 80,
+      "n" : 1,
+      "h" : 64
+    },
+    "res3a:0" : {
+      "k" : 512,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "concat_3:0" : {
+      "k" : 512,
+      "w" : 20,
+      "n" : 1,
+      "h" : 8
+    },
+    "layer4x_br1_ConvA\/BiasAdd:0" : {
+      "k" : 256,
+      "w" : 20,
+      "n" : 1,
+      "h" : 16
+    },
+    "res5a_relu:0" : {
+      "k" : 2048,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "Reshape_9:0" : {
+      "k" : 256,
+      "w" : 20,
+      "n" : 1,
+      "h" : 32
+    },
+    "layer2x_br2_ConvD\/BiasAdd:0" : {
+      "k" : 512,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "bn5a_branch2a\/Relu:0" : {
+      "k" : 512,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "layer4x_br2_ConvC\/BiasAdd:0_swap_W_C_0" : {
+      "k" : 20,
+      "w" : 256,
+      "n" : 1,
+      "h" : 16
+    },
+    "layer4x_br2_BN\/layer4x_br2_BN\/mul_1:0" : {
+      "k" : 256,
+      "w" : 40,
+      "n" : 1,
+      "h" : 32
+    },
+    "bn4f_branch2c\/bn4f_branch2c\/add_1:0" : {
+      "k" : 1024,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "layer4x_br1_BN\/layer4x_br1_BN\/sub:0" : {
+      "k" : 256,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "layer16x_BN\/layer16x_BN\/add_1:0" : {
+      "k" : 64,
+      "w" : 160,
+      "n" : 1,
+      "h" : 128
+    },
+    "bn4b_branch2b\/Relu:0" : {
+      "k" : 256,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "layer4x_br1_BN\/layer4x_br1_BN\/mul:0" : {
+      "k" : 256,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "Reshape_12:0" : {
+      "k" : 128,
+      "w" : 40,
+      "n" : 1,
+      "h" : 64
+    },
+    "layer2x_br1_BN\/layer2x_br1_BN\/mul_1:0" : {
+      "k" : 512,
+      "w" : 20,
+      "n" : 1,
+      "h" : 16
+    },
+    "layer2x_br2_BN\/layer2x_br2_BN\/add_1:0" : {
+      "k" : 512,
+      "w" : 20,
+      "n" : 1,
+      "h" : 16
+    },
+    "layer4x_BN\/layer4x_BN\/sub:0" : {
+      "k" : 256,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "Reshape_23:0" : {
+      "k" : 64,
+      "w" : 160,
+      "n" : 1,
+      "h" : 128
+    },
+    "bn4c_branch2c\/bn4c_branch2c\/add_1:0" : {
+      "k" : 1024,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "res2c:0" : {
+      "k" : 256,
+      "w" : 76,
+      "n" : 1,
+      "h" : 57
+    },
+    "res4c_relu:0" : {
+      "k" : 1024,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "layer8x_br1_ConvC\/BiasAdd:0_swap_W_C_0" : {
+      "k" : 40,
+      "w" : 128,
+      "n" : 1,
+      "h" : 32
+    },
+    "bn5b_branch2a\/Relu:0" : {
+      "k" : 512,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "res4f:0" : {
+      "k" : 1024,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "layer16x_br1_ConvC\/BiasAdd:0_swap_W_C_0" : {
+      "k" : 80,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "concat_10:0" : {
+      "k" : 256,
+      "w" : 40,
+      "n" : 1,
+      "h" : 16
+    },
+    "image" : {
+      "k" : 3,
+      "w" : 304,
+      "n" : 1,
+      "h" : 228
+    },
+    "layer2x_br2_ConvA\/BiasAdd:0_swap_W_C_0" : {
+      "k" : 10,
+      "w" : 512,
+      "n" : 1,
+      "h" : 8
+    },
+    "Reshape_10:0" : {
+      "k" : 256,
+      "w" : 20,
+      "n" : 1,
+      "h" : 32
+    },
+    "concat_6:0" : {
+      "k" : 256,
+      "w" : 40,
+      "n" : 1,
+      "h" : 16
+    },
+    "res5c:0" : {
+      "k" : 2048,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "bn4c_branch2b\/Relu:0" : {
+      "k" : 256,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "layer2x_br2_ConvC\/BiasAdd:0" : {
+      "k" : 512,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "layer16x_br1_BN\/layer16x_br1_BN\/mul:0" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "Reshape_21:0" : {
+      "k" : 64,
+      "w" : 80,
+      "n" : 1,
+      "h" : 128
+    },
+    "layer8x_br2_ConvC\/BiasAdd:0_swap_W_C_0" : {
+      "k" : 40,
+      "w" : 128,
+      "n" : 1,
+      "h" : 32
+    },
+    "bn5c_branch2a\/Relu:0" : {
+      "k" : 512,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "layer2x_br1_ConvA\/BiasAdd:0_swap_W_C_0" : {
+      "k" : 10,
+      "w" : 512,
+      "n" : 1,
+      "h" : 8
+    },
+    "layer4x_br1_ConvA\/BiasAdd:0_swap_W_C_0" : {
+      "k" : 20,
+      "w" : 256,
+      "n" : 1,
+      "h" : 16
+    },
+    "concat_11:0" : {
+      "k" : 512,
+      "w" : 20,
+      "n" : 1,
+      "h" : 32
+    },
+    "res3a_relu:0" : {
+      "k" : 512,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "layer8x_ReLU:0" : {
+      "k" : 128,
+      "w" : 80,
+      "n" : 1,
+      "h" : 64
+    },
+    "layer4x_Sum:0" : {
+      "k" : 256,
+      "w" : 40,
+      "n" : 1,
+      "h" : 32
+    },
+    "bn4d_branch2b\/Relu:0" : {
+      "k" : 256,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "bn3a_branch1\/bn3a_branch1\/add_1:0" : {
+      "k" : 512,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "bn3a_branch2b\/Relu:0" : {
+      "k" : 128,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "res2b:0" : {
+      "k" : 256,
+      "w" : 76,
+      "n" : 1,
+      "h" : 57
+    },
+    "res4e:0" : {
+      "k" : 1024,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "bn4f_branch2b\/Relu:0" : {
+      "k" : 256,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "layer4x_br1_BN\/layer4x_br1_BN\/mul_1:0" : {
+      "k" : 256,
+      "w" : 40,
+      "n" : 1,
+      "h" : 32
+    },
+    "layer16x_br2_ConvC\/BiasAdd:0_swap_W_C_0" : {
+      "k" : 80,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "layer4x_br2_BN\/layer4x_br2_BN\/add_1:0" : {
+      "k" : 256,
+      "w" : 40,
+      "n" : 1,
+      "h" : 32
+    },
+    "layer16x_br2_ConvD\/BiasAdd:0_swap_W_C_1" : {
+      "k" : 80,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "layer8x_br2_ConvD\/BiasAdd:0" : {
+      "k" : 128,
+      "w" : 40,
+      "n" : 1,
+      "h" : 32
+    },
+    "layer16x_br1_ConvD\/BiasAdd:0_swap_W_C_1" : {
+      "k" : 80,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "res5b:0" : {
+      "k" : 2048,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "concat_9:0" : {
+      "k" : 256,
+      "w" : 40,
+      "n" : 1,
+      "h" : 16
+    },
+    "layer4x_br2_ConvA\/BiasAdd:0_swap_W_C_0" : {
+      "k" : 20,
+      "w" : 256,
+      "n" : 1,
+      "h" : 16
+    },
+    "layer2x_br2_ConvB\/BiasAdd:0" : {
+      "k" : 512,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "layer16x_ReLU:0" : {
+      "k" : 64,
+      "w" : 160,
+      "n" : 1,
+      "h" : 128
+    },
+    "bn5b_branch2c\/bn5b_branch2c\/add_1:0" : {
+      "k" : 2048,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "bn4a_branch2a\/Relu:0" : {
+      "k" : 256,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "concat_12:0" : {
+      "k" : 128,
+      "w" : 80,
+      "n" : 1,
+      "h" : 32
+    },
+    "concat_1:0" : {
+      "k" : 512,
+      "w" : 20,
+      "n" : 1,
+      "h" : 8
+    },
+    "bn3b_branch2c\/bn3b_branch2c\/add_1:0" : {
+      "k" : 512,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "layer2x_br1_BN\/layer2x_br1_BN\/add_1:0" : {
+      "k" : 512,
+      "w" : 20,
+      "n" : 1,
+      "h" : 16
+    },
+    "bn4e_branch2b\/Relu:0" : {
+      "k" : 256,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "layer2x_br1_BN\/layer2x_br1_BN\/sub:0" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "res2c_relu:0" : {
+      "k" : 256,
+      "w" : 76,
+      "n" : 1,
+      "h" : 57
+    },
+    "concat_1:0_concat" : {
+      "k" : 20,
+      "w" : 512,
+      "n" : 1,
+      "h" : 8
+    },
+    "bn3b_branch2b\/Relu:0" : {
+      "k" : 128,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "layer2x_br1_BN\/layer2x_br1_BN\/mul:0" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "layer2x_br1_ConvD\/BiasAdd:0" : {
+      "k" : 512,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "layer16x_br1_ConvD\/BiasAdd:0" : {
+      "k" : 64,
+      "w" : 80,
+      "n" : 1,
+      "h" : 64
+    },
+    "layer8x_br1_ConvA\/BiasAdd:0_swap_W_C_0" : {
+      "k" : 40,
+      "w" : 128,
+      "n" : 1,
+      "h" : 32
+    },
+    "concat_13:0" : {
+      "k" : 128,
+      "w" : 80,
+      "n" : 1,
+      "h" : 32
+    },
+    "bn4b_branch2a\/Relu:0" : {
+      "k" : 256,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "res2a:0" : {
+      "k" : 256,
+      "w" : 76,
+      "n" : 1,
+      "h" : 57
+    },
+    "layer4x_BN\/layer4x_BN\/add_1:0" : {
+      "k" : 256,
+      "w" : 40,
+      "n" : 1,
+      "h" : 32
+    },
+    "res4d:0" : {
+      "k" : 1024,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "layer8x_br2_ConvC\/BiasAdd:0" : {
+      "k" : 128,
+      "w" : 40,
+      "n" : 1,
+      "h" : 32
+    },
+    "Reshape_19:0" : {
+      "k" : 64,
+      "w" : 80,
+      "n" : 1,
+      "h" : 128
+    },
+    "res5a:0" : {
+      "k" : 2048,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "bn3c_branch2b\/Relu:0" : {
+      "k" : 128,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "res4b_relu:0" : {
+      "k" : 1024,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "layer16x_br1_ConvC\/BiasAdd:0" : {
+      "k" : 64,
+      "w" : 80,
+      "n" : 1,
+      "h" : 64
+    },
+    "layer8x_br2_ConvA\/BiasAdd:0_swap_W_C_0" : {
+      "k" : 40,
+      "w" : 128,
+      "n" : 1,
+      "h" : 32
+    },
+    "layer16x_br1_ConvA\/BiasAdd:0" : {
+      "k" : 64,
+      "w" : 80,
+      "n" : 1,
+      "h" : 64
+    },
+    "bn4d_branch2c\/bn4d_branch2c\/add_1:0" : {
+      "k" : 1024,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "concat_4:0" : {
+      "k" : 512,
+      "w" : 20,
+      "n" : 1,
+      "h" : 8
+    },
+    "concat_3:0_concat" : {
+      "k" : 20,
+      "w" : 512,
+      "n" : 1,
+      "h" : 8
+    },
+    "bn4c_branch2a\/Relu:0" : {
+      "k" : 256,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "concat_14:0" : {
+      "k" : 256,
+      "w" : 40,
+      "n" : 1,
+      "h" : 64
+    },
+    "layer4x_br1_BN_1:0" : {
+      "k" : 256,
+      "w" : 40,
+      "n" : 1,
+      "h" : 32
+    },
+    "layer2x_br1_ConvC\/BiasAdd:0" : {
+      "k" : 512,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "concat_19:0_concat" : {
+      "k" : 160,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "layer16x_br1_ConvA\/BiasAdd:0_swap_W_C_0" : {
+      "k" : 80,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "bn4a_branch1\/bn4a_branch1\/add_1:0" : {
+      "k" : 1024,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "Reshape_17:0" : {
+      "k" : 128,
+      "w" : 80,
+      "n" : 1,
+      "h" : 64
+    },
+    "concat_18:0_concat" : {
+      "k" : 160,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "layer16x_br2_BN\/layer16x_br2_BN\/sub:0" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "layer2x_br2_ConvD\/BiasAdd:0_swap_W_C_1" : {
+      "k" : 10,
+      "w" : 512,
+      "n" : 1,
+      "h" : 8
+    },
+    "bn4a_branch2c\/bn4a_branch2c\/add_1:0" : {
+      "k" : 1024,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "layer16x_br1_BN\/layer16x_br1_BN\/add_1:0" : {
+      "k" : 64,
+      "w" : 160,
+      "n" : 1,
+      "h" : 128
+    },
+    "concat_16:0_concat" : {
+      "k" : 80,
+      "w" : 128,
+      "n" : 1,
+      "h" : 32
+    },
+    "bn4e_branch2a\/Relu:0" : {
+      "k" : 256,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "layer16x_br1_ConvB\/BiasAdd:0" : {
+      "k" : 64,
+      "w" : 80,
+      "n" : 1,
+      "h" : 64
+    },
+    "bn3d_branch2b\/Relu:0" : {
+      "k" : 128,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "layer4x_br1_BN\/layer4x_br1_BN\/add_1:0" : {
+      "k" : 256,
+      "w" : 40,
+      "n" : 1,
+      "h" : 32
+    },
+    "concat_15:0_concat" : {
+      "k" : 80,
+      "w" : 128,
+      "n" : 1,
+      "h" : 32
+    },
+    "layer4x_br2_ConvD\/BiasAdd:0" : {
+      "k" : 256,
+      "w" : 20,
+      "n" : 1,
+      "h" : 16
+    },
+    "concat_4:0_concat" : {
+      "k" : 20,
+      "w" : 512,
+      "n" : 1,
+      "h" : 8
+    },
+    "bn2a_branch2c\/bn2a_branch2c\/add_1:0" : {
+      "k" : 256,
+      "w" : 76,
+      "n" : 1,
+      "h" : 57
+    },
+    "res3d_relu:0" : {
+      "k" : 512,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "concat_20:0" : {
+      "k" : 128,
+      "w" : 80,
+      "n" : 1,
+      "h" : 128
+    },
+    "layer4x_br2_BN\/layer4x_br2_BN\/sub:0" : {
+      "k" : 256,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "concat_13:0_concat" : {
+      "k" : 80,
+      "w" : 128,
+      "n" : 1,
+      "h" : 32
+    },
+    "layer8x_br2_ConvB\/BiasAdd:0" : {
+      "k" : 128,
+      "w" : 40,
+      "n" : 1,
+      "h" : 32
+    },
+    "res4c:0" : {
+      "k" : 1024,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "concat_12:0_concat" : {
+      "k" : 80,
+      "w" : 128,
+      "n" : 1,
+      "h" : 32
+    },
+    "layer4x_br2_BN\/layer4x_br2_BN\/mul:0" : {
+      "k" : 256,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "Reshape_1:0" : {
+      "k" : 512,
+      "w" : 10,
+      "n" : 1,
+      "h" : 16
+    },
+    "res4f_relu:0" : {
+      "k" : 1024,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "layer8x_BN\/layer8x_BN\/sub:0" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "layer2x_br2_ConvA\/BiasAdd:0" : {
+      "k" : 512,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "bn4d_branch2a\/Relu:0" : {
+      "k" : 256,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "concat_15:0" : {
+      "k" : 128,
+      "w" : 80,
+      "n" : 1,
+      "h" : 32
+    },
+    "concat_10:0_concat" : {
+      "k" : 40,
+      "w" : 256,
+      "n" : 1,
+      "h" : 16
+    },
+    "Reshape_15:0" : {
+      "k" : 128,
+      "w" : 40,
+      "n" : 1,
+      "h" : 64
+    },
+    "layer2x_br1_ConvD\/BiasAdd:0_swap_W_C_1" : {
+      "k" : 10,
+      "w" : 512,
+      "n" : 1,
+      "h" : 8
+    },
+    "layer8x_br2_BN\/layer8x_br2_BN\/mul_1:0" : {
+      "k" : 128,
+      "w" : 80,
+      "n" : 1,
+      "h" : 64
+    },
+    "layer4x_br1_ConvD\/BiasAdd:0_swap_W_C_1" : {
+      "k" : 20,
+      "w" : 256,
+      "n" : 1,
+      "h" : 16
+    },
+    "bn3a_branch2a\/Relu:0" : {
+      "k" : 128,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "pool1:0" : {
+      "k" : 64,
+      "w" : 76,
+      "n" : 1,
+      "h" : 57
+    },
+    "concat:0" : {
+      "k" : 512,
+      "w" : 20,
+      "n" : 1,
+      "h" : 8
+    },
+    "layer16x_br1_BN\/layer16x_br1_BN\/mul_1:0" : {
+      "k" : 64,
+      "w" : 160,
+      "n" : 1,
+      "h" : 128
+    },
+    "bn4f_branch2a\/Relu:0" : {
+      "k" : 256,
+      "w" : 19,
+      "n" : 1,
+      "h" : 15
+    },
+    "concat_7:0" : {
+      "k" : 256,
+      "w" : 40,
+      "n" : 1,
+      "h" : 16
+    },
+    "layer8x_br1_ConvD\/BiasAdd:0" : {
+      "k" : 128,
+      "w" : 40,
+      "n" : 1,
+      "h" : 32
+    },
+    "layer2x_br1_ConvB\/BiasAdd:0" : {
+      "k" : 512,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "concat_21:0" : {
+      "k" : 64,
+      "w" : 160,
+      "n" : 1,
+      "h" : 64
+    },
+    "res5c_relu:0" : {
+      "k" : 2048,
+      "w" : 10,
+      "n" : 1,
+      "h" : 8
+    },
+    "Reshape:0" : {
+      "k" : 512,
+      "w" : 10,
+      "n" : 1,
+      "h" : 16
+    },
+    "layer16x_br1_ConvB\/BiasAdd:0_swap_W_C_1" : {
+      "k" : 80,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "layer16x_Sum:0" : {
+      "k" : 64,
+      "w" : 160,
+      "n" : 1,
+      "h" : 128
+    },
+    "layer16x_br2_ConvA\/BiasAdd:0_swap_W_C_0" : {
+      "k" : 80,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "layer16x_br2_ConvB\/BiasAdd:0_swap_W_C_1" : {
+      "k" : 80,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "concat_22:0_concat" : {
+      "k" : 160,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "layer8x_Sum:0" : {
+      "k" : 128,
+      "w" : 80,
+      "n" : 1,
+      "h" : 64
+    },
+    "concat_6:0_concat" : {
+      "k" : 40,
+      "w" : 256,
+      "n" : 1,
+      "h" : 16
+    },
+    "Reshape_2:0" : {
+      "k" : 512,
+      "w" : 20,
+      "n" : 1,
+      "h" : 16
+    },
+    "Reshape_13:0" : {
+      "k" : 128,
+      "w" : 40,
+      "n" : 1,
+      "h" : 64
+    },
+    "res2b_relu:0" : {
+      "k" : 256,
+      "w" : 76,
+      "n" : 1,
+      "h" : 57
+    },
+    "concat_21:0_concat" : {
+      "k" : 160,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "layer4x_br2_ConvD\/BiasAdd:0_swap_W_C_1" : {
+      "k" : 20,
+      "w" : 256,
+      "n" : 1,
+      "h" : 16
+    },
+    "layer2x_Sum:0" : {
+      "k" : 512,
+      "w" : 20,
+      "n" : 1,
+      "h" : 16
+    },
+    "concat_16:0" : {
+      "k" : 128,
+      "w" : 80,
+      "n" : 1,
+      "h" : 32
+    },
+    "bn3c_branch2c\/bn3c_branch2c\/add_1:0" : {
+      "k" : 512,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "layer4x_br2_ConvC\/BiasAdd:0" : {
+      "k" : 256,
+      "w" : 20,
+      "n" : 1,
+      "h" : 16
+    },
+    "bn3b_branch2a\/Relu:0" : {
+      "k" : 128,
+      "w" : 38,
+      "n" : 1,
+      "h" : 29
+    },
+    "bn2a_branch2b\/Relu:0" : {
+      "k" : 64,
+      "w" : 76,
+      "n" : 1,
+      "h" : 57
+    },
+    "layer8x_br2_ConvA\/BiasAdd:0" : {
+      "k" : 128,
+      "w" : 40,
+      "n" : 1,
+      "h" : 32
+    },
+    "layer2x_br2_BN\/layer2x_br2_BN\/sub:0" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    }
+  }
+}

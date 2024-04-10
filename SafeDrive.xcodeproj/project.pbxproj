@@ -40,6 +40,7 @@
 		D6F435222BC5C93B0038938F /* DepthEstimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F435212BC5C93B0038938F /* DepthEstimationVC.swift */; };
 		D6F435242BC5D22D0038938F /* VideoPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F435232BC5D22D0038938F /* VideoPlayerService.swift */; };
 		D6F435262BC698C00038938F /* DepthEstimationVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F435252BC698C00038938F /* DepthEstimationVideoPlayer.swift */; };
+		D6F435282BC69A8A0038938F /* FCRNFP16.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = D6F435272BC69A8A0038938F /* FCRNFP16.mlmodelc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		D6F435212BC5C93B0038938F /* DepthEstimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthEstimationVC.swift; sourceTree = "<group>"; };
 		D6F435232BC5D22D0038938F /* VideoPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerService.swift; sourceTree = "<group>"; };
 		D6F435252BC698C00038938F /* DepthEstimationVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthEstimationVideoPlayer.swift; sourceTree = "<group>"; };
+		D6F435272BC69A8A0038938F /* FCRNFP16.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FCRNFP16.mlmodelc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				D6F4351F2BC59EA40038938F /* FCRNFP16.mlmodel */,
+				D6F435272BC69A8A0038938F /* FCRNFP16.mlmodelc */,
 				D694ED012BA288D700211F2B /* SafeDrive.entitlements */,
 				D694ED042BA28A3200211F2B /* Info.plist */,
 				D66EE7272B969D50003E38A3 /* SafeDriveApp.swift */,
@@ -178,9 +181,9 @@
 			isa = PBXGroup;
 			children = (
 				D684DC622BA9D00B00018186 /* DepthEstimationHandler.swift */,
-				D694ECE92B99D8DA00211F2B /* DepthEstimationModel.swift */,
 				D6F435212BC5C93B0038938F /* DepthEstimationVC.swift */,
 				D6F435252BC698C00038938F /* DepthEstimationVideoPlayer.swift */,
+				D694ECE92B99D8DA00211F2B /* DepthEstimationModel.swift */,
 			);
 			path = DepthEstimation;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				D694ECDF2B98EABE00211F2B /* cityPort.mp4 in Resources */,
 				D694ECE42B99019F00211F2B /* trafficLightPort.mp4 in Resources */,
 				D694ECE82B99109C00211F2B /* softAlert.mp3 in Resources */,
+				D6F435282BC69A8A0038938F /* FCRNFP16.mlmodelc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

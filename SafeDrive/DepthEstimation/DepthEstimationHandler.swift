@@ -30,6 +30,7 @@ class DepthEstimationHandler {
         
         do {
             let visionModel = try VNCoreMLModel(for: MLModel(contentsOf: modelURL))
+            print("DE model: \(visionModel.description)")
             depthEstimationRequest = VNCoreMLRequest(model: visionModel) { [weak self] (request, error) in
                 self?.processEstimation(for: request, error: error)
             }

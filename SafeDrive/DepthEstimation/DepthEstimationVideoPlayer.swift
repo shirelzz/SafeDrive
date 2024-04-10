@@ -5,7 +5,9 @@
 //  Created by שיראל זכריה on 10/04/2024.
 //
 
-import Foundation
+import SwiftUI
+import AVFoundation
+import UIKit
 
 extension DepthEstimationVC {
     

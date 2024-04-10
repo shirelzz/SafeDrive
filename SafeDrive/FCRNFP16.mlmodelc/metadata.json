@@ -1,0 +1,73 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "Given a flat 2D image the model returns its predicted depth map. Where a depth map is a 2-D matrix, roughly half the size of the models input shape, containing information relating to the predicted distances of the surfaces within the scene from the cameras viewpoint. ie : the larger the pixel value means the farther the object is - see https:\/\/github.com\/iro-cp\/FCRN-DepthPrediction for more details.",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 1 × 128 × 160)",
+        "shortDescription" : "128x160 array of depth values (the greater the value the closer the object)",
+        "shape" : "[1, 128, 160]",
+        "name" : "depthmap",
+        "type" : "MultiArray"
+      }
+    ],
+    "storagePrecision" : "Float16",
+    "modelParameters" : [
+
+    ],
+    "author" : "Iro Laina, Christian Rupprecht, Vasileios Belagiannis, Federico Tombari, Nassir Navab.",
+    "specificationVersion" : 2,
+    "license" : "Please see https:\/\/github.com\/iro-cp\/FCRN-DepthPrediction for license information.",
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.13.2",
+      "tvOS" : "11.2",
+      "visionOS" : "1.0",
+      "watchOS" : "4.2",
+      "iOS" : "11.2",
+      "macCatalyst" : "11.2"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "height" : "228",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "304",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 304 × 228)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "RGB Image",
+        "name" : "image"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.apple.developer.machine-learning.models.name" : "FCRNFP16.mlmodel",
+      "com.apple.developer.machine-learning.models.version" : "1.1",
+      "com.apple.coreml.model.preview.type" : "depthEstimation",
+      "com.apple.developer.machine-learning.models.category" : "image",
+      "coremltoolsVersion" : "4.0a6"
+    },
+    "generatedClassName" : "FCRNFP16",
+    "neuralNetworkLayerTypeHistogram" : {
+      "Concat" : 24,
+      "LoadConstant" : 22,
+      "Multiply" : 8,
+      "ActivationReLU" : 58,
+      "Add" : 35,
+      "Permute" : 48,
+      "BatchNorm" : 90,
+      "Convolution" : 91,
+      "Reshape" : 24,
+      "PoolingMax" : 1
+    },
+    "method" : "predict"
+  }
+]
