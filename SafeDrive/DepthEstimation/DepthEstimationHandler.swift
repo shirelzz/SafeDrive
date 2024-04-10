@@ -10,8 +10,9 @@ import Vision
 import CoreML
 
 protocol DepthEstimationDelegate: AnyObject {
-    func didEstimateDepth(depthMap: DepthMap?)
+    func didEstimateDepth(depthMapPixelBuffer: CVPixelBuffer?)
 }
+
 
 class DepthEstimationHandler {
     
@@ -53,11 +54,27 @@ class DepthEstimationHandler {
         guard let results = request.results as? [VNPixelBufferObservation],
               let depthMapPixelBuffer = results.first?.pixelBuffer else {
             print("Unable to estimate depth.\n\(String(describing: error))")
-            delegate?.didEstimateDepth(depthMap: nil)
+            delegate?.didEstimateDepth(depthMapPixelBuffer: nil)
             return
         }
         
-        let depthMap = DepthMap(pixelBuffer: depthMapPixelBuffer)
-        delegate?.didEstimateDepth(depthMap: depthMap)
+        // Delegate method passes the pixel buffer directly
+        delegate?.didEstimateDepth(depthMapPixelBuffer: depthMapPixelBuffer)
     }
+
+    
+//    private func processEstimation(for request: VNRequest, error: Error?) {
+//        guard let results = request.results as? [VNPixelBufferObservation],
+//              let depthMapPixelBuffer = results.first?.pixelBuffer else {
+//            print("Unable to estimate depth.\n\(String(describing: error))")
+//            delegate?.didEstimateDepth(depthMap: nil)
+//            return
+//        }
+//        
+//        let depthMap = DepthMap(pixelBuffer: depthMapPixelBuffer)
+//        delegate?.didEstimateDepth(depthMap: depthMap)
+//        
+//        // Add this line to display the depth estimation result
+//        (delegate as? DepthEstimationVC)?.displayDepthEstimation(depthMap: depthMapPixelBuffer)
+//    }
 }

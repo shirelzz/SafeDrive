@@ -11,9 +11,15 @@ struct ContentView: View {
     var body: some View {
         
         //        HostedViewController()
-        //                    .ignoresSafeArea()
+        //                    .ignoresSafeArea() 
         
         TabView {
+            
+            MainView()
+                .tabItem {
+                    Label("photo Depth", systemImage: "square.stack")
+                        .padding()
+                }
             
             ObjectDetectionView() // UIKitViewControllerRepresentable
                 .tabItem {

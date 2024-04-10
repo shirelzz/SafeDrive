@@ -1,5 +1,5 @@
 //
-//  DepthEstimationModel.swift
+//  DepthMap.swift
 //  SafeDrive
 //
 //  Created by שיראל זכריה on 07/03/2024.
